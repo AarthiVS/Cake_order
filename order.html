@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cake Ordering Website - Order</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cake Ordering</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="order">
+    <h2>Place Your Order</h2>
+    <form method="post" action="check.php" >
+      <div>
+        <label for="cake_flavor">Cake Flavor:</label>
+        <select name="cake_flavor" id="cake_flavor">
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="strawberry">Strawberry</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="cake_size">Cake Size:</label>
+        <select name="cake_size" id="cake_size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="cake_design">Cake Design:</label>
+        <textarea name="cake_design" id="cake_design"></textarea>
+      </div>
+
+      <div>
+        <label for="cake_toppings">Cake Toppings:</label>
+        <input type="checkbox"  onclick="ok()" id="topping1" >
+        <label for="topping1">Sprinkles</label>
+        <input type="checkbox" onclick="okk()" id="topping2" >
+        <label for="topping2">Chocolate Chips</label>
+        <input type="text" hidden name="topping1" value="false" id="t1">
+        <input type="text" hidden name="topping2" value="false" id="t2">
+        <input type="text" hidden name="topping3" value="false" id="t3">
+        <input type="checkbox"  onclick="okkk()" id="topping3">
+        
+        <label for="topping3">Caramel</label>
+      </div>
+
+      <div>
+        <label for="delivery_date">Delivery Date:</label>
+        <input type="date" name="delivery_date" id="delivery_date">
+      </div>
+
+      <div>
+        <input type="submit"  value="Submit Order">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Cake Ordering Website. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  function ok(){
+    let a=document.getElementById("topping1").checked;
+    if(a==true){
+      document.getElementById('t1').value="true";
+    }
+    else{
+      document.getElementById('t1').value="false";
+    }
+    
+  }
+  function okk(){
+    let b=document.getElementById("topping2").checked;
+    if(b==true){
+      document.getElementById('t2').value="true";
+    }
+    else{
+      document.getElementById('t2').value="false";
+    }
+    
+    
+  }
+  function okkk(){
+    let c=document.getElementById("topping3").checked;
+    if(c==true){
+      document.getElementById('t3').value="true";
+    }
+    else{
+      document.getElementById('t3').value="false";
+    }
+    
+  }
+</script>
+</html>

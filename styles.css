@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFC107;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #FFF;
+  margin: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #FFC107;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* Home Page Styles */
+
+.home {
+  text-align: center;
+  padding: 50px;
+}
+
+.home h2 {
+  color: #FFC107;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.home .btn {
+  display: inline-block;
+  background-color: #FFC107;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: #FFA000;
+}
+/* Order Page Styles */
+
+.order {
+  background-color: #FFF;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.order h2 {
+  color: #FFC107;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.order label {
+  font-weight: bold;
+}
+
+.order textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.order input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.order input[type="date"] {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.order input[type="submit"] {
+  background-color: #FFC107;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Additional Styling */
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 768px) {
+  .order {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+}
+
+
+
+/* Contact Page Styles */
+
+.contact {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact h2 {
+  color: #FFC107;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact .form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact input[type="submit"] {
+  background-color: #FFC107;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 768px) {
+  .home, .contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
